@@ -1,0 +1,116 @@
+.selectSection {
+  padding: 90px 15px 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .wrapper {
+    width: 100%;
+    max-width: 775px;
+    margin: auto;
+    .contantSelect {
+      display: flex;
+      flex-direction: column;
+      .title {
+        color: #fff;
+        font-family: OpenSansLight;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 85px;
+      }
+      .onlyInstall {
+        display: block;
+        padding: 26px 20px;
+        color: white;
+        font-family: OpenSansSemibold;
+        font-size: 18px;
+        border: 2px solid white;
+        border-radius: 40px;
+        text-align: center;
+        margin-bottom: 28px;
+        text-decoration: none;
+        transition: .5s;
+        &:hover {
+          color: #0b7e97;
+          background-color: #fff;
+        }
+      }
+      .install {
+        display: block;
+        padding: 26px 20px;
+        color: #0b7e97;
+        font-family: OpenSansSemibold;
+        font-size: 18px;
+        border-radius: 40px;
+        border: 2px solid #0b7e97;
+        text-align: center;
+        background-color: #fff;
+        text-decoration: none;
+        transition: .5s;
+        &:hover {
+          color: white;
+          background-color: transparent;
+          border: 2px solid white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .selectSection {
+    padding: 60px 15px;
+    .wrapper {
+      .contantSelect {
+        .title {
+          font-size: 30px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .selectSection {
+    padding: 40px 15px;
+    .wrapper {
+      .contantSelect {
+        .title {
+          font-size: 28px;
+          margin-bottom: 50px;
+        }
+        .onlyInstall {
+          padding: 20px;
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+        .install {
+          padding: 20px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .selectSection {
+    padding: 20px 15px;
+    .wrapper {
+      .contantSelect {
+        .title {
+          font-size: 22px;
+          margin-bottom: 30px;
+        }
+        .onlyInstall {
+          padding: 15px;
+          font-size: 15px;
+        }
+        .install {
+          padding: 15px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.lastSection {
+  .footer {
+    padding: 0 15px;
+    .wrapper {
+      width: 100%;
+      max-width: 1170px;
+      margin: auto;
+      .footerNav {
+        display: flex;
+        padding: 60px 0;
+        .wrapLogo {
+          display: flex;
+          align-items: center;
+          flex: 1;
+          a {
+            display: inline-block;
+            position: relative;
+            color: #393939;
+            font-family: OpenSansBold;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            > div {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              overflow: hidden;
+              transition: transform .4s cubic-bezier(.06, .35, .32, .99);
+              transform: translateX(-100%);
+
+              > div {
+                color: #d2d2d2;
+                transition: transform .4s cubic-bezier(.06, .35, .32, .99);
+                transform: translateX(100%) translateZ(0);
+              }
+            }
+            &:hover {
+              div {
+                transform: translateZ(0);
+              }
+            }
+          }
+        }
+        .wrapButton {
+          display: flex;
+          justify-content: flex-end;
+          flex: 1;
+          .textWrap {
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            .footerText {
+              color: #299cb6;
+              font-family: OpenSansSemibold;
+              font-size: 13px;
+              text-transform: uppercase;
+              &:last-child {
+                margin-left: 38px;
+                position: relative;
+                &:before {
+                  position: absolute;
+                }
+              }
+            }
+          }
+          .linkSupport,
+          .linkLogin {
+            height: 40px;
+            padding: 9px 16px;
+            color: #299cb6;
+            border: 2px solid #299cb6;
+            font-family: OpenSansSemibold;
+            font-size: 13px;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+          .linkSupport {
+            border-right: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+          .linkLogin {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
