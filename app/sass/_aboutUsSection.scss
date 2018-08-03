@@ -1,5 +1,4 @@
 .aboutSection {
-  //padding: 0 15px;
   background-color: #f7f9fd;
   .wrapTitle {
     padding: 95px 15px 100px;
@@ -84,6 +83,11 @@
             justify-content: flex-end;
             img {
               max-width: 100%;
+              transition: .4s;
+              &:hover {
+                box-shadow: 0 0 30px rgba(0,0,0,.2);
+                transform: scale(1.015);
+              }
             }
           }
         }
@@ -253,6 +257,12 @@
           .itemsWrapper {
             .itemWrap {
               margin-bottom: 20px;
+              .contentLeft {
+                width: 40px;
+                img {
+                  width: 40px;
+                }
+              }
               .contentRight {
                 .title {
                   font-size: 18px;
@@ -267,6 +277,9 @@
             }
             .itemWrapImg {
               margin-bottom: 20px;
+              img {
+                height: 300px;
+              }
             }
           }
           .itemsWrapperLast {
@@ -285,6 +298,42 @@
               }
               .progressBar {
                 margin: 20px 0 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .aboutSection {
+    .wrapper {
+      .contentItems {
+        .item {
+          .itemsWrapper {
+            .itemWrapImg {
+              img {
+                height: 250px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .aboutSection {
+    .wrapper {
+      .contentItems {
+        .item {
+          .itemsWrapper {
+            .itemWrapImg {
+              img {
+                height: 200px;
               }
             }
           }

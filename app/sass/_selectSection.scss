@@ -80,12 +80,12 @@
           margin-bottom: 50px;
         }
         .onlyInstall {
-          padding: 20px;
+          padding: 20px 30px;
           font-size: 16px;
           margin-bottom: 20px;
         }
         .install {
-          padding: 20px;
+          padding: 20px 30px;
           font-size: 16px;
         }
       }
@@ -103,12 +103,32 @@
           margin-bottom: 30px;
         }
         .onlyInstall {
-          padding: 15px;
+          padding: 15px 40px;
           font-size: 15px;
         }
         .install {
-          padding: 15px;
+          padding: 15px 40px;
           font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .selectSection {
+    padding: 15px;
+    .wrapper {
+      .contantSelect {
+        .title {
+          font-size: 20px;
+          margin-bottom: 26px;
+        }
+        .onlyInstall {
+          padding: 15px 20px;
+        }
+        .install {
+          padding: 15px 20px;
         }
       }
     }

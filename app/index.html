@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Codevery</title>
-    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -26,14 +26,14 @@
                 </div>
 
                 <div class="wrapButton">
-                    <a href="" class="linkSupport">Support</a>
-                    <a href="" class="linkLogin">login</a>
+                    <div class="linkSupport">Support</div>
+                    <div class="linkLogin">login</div>
                 </div>
             </div>
             <div class="wrapContent">
                 <h1 class="title">Your Store is <span>Leaving Money</span> on the Table</h1>
                 <p class="subTitle">Let’s change that!</p>
-                <a href="#" class="video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=Y-ZWcsVzLQ8" class="video">
                     <img src="img/iconVideo.png" alt="">
                 </a>
                 <div class="wrapIllustration">
@@ -205,8 +205,10 @@
                         <p class="footerText">Privacy policy</p>
                         <p class="footerText">Terms & conditions</p>
                     </div>
-                    <a href="" class="linkSupport">Support</a>
-                    <a href="" class="linkLogin">login</a>
+                    <div class="linkWrap">
+                        <a href="" class="linkSupport">Support</a>
+                        <a href="" class="linkLogin">login</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -214,6 +216,7 @@
 </div>
 
 <script src="js/libs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
